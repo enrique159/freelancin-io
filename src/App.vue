@@ -2,16 +2,19 @@
   <div id="app">
     <Header/>
     <Stats/>
+    <Features/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
 import Stats from '@/components/Stats.vue';
+import Features from '@/components/Features.vue';
 export default {
   components: {
     Header,
     Stats,
+    Features
   },
 };
 </script>
