@@ -56,7 +56,7 @@ export default {
 <style lang="scss" scoped>
 #features-comp {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 
   .features-title {
     font-size: var(--biggest-font-size);

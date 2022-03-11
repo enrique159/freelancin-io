@@ -3,6 +3,7 @@
     <Header/>
     <Stats/>
     <Features/>
+    <Services/>
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 import Header from '@/components/Header.vue';
 import Stats from '@/components/Stats.vue';
 import Features from '@/components/Features.vue';
+import Services from '@/components/Services.vue';
 export default {
   components: {
     Header,
     Stats,
-    Features
+    Features,
+    Services
   },
 };
 </script>
