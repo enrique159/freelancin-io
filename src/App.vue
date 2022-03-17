@@ -4,6 +4,10 @@
     <Stats/>
     <Features/>
     <Services/>
+    <Projects/>
+    <Customers/>
+    <Agents/>
+    <Footer/>
   </div>
 </template>
 
@@ -12,12 +16,20 @@ import Header from '@/components/Header.vue';
 import Stats from '@/components/Stats.vue';
 import Features from '@/components/Features.vue';
 import Services from '@/components/Services.vue';
+import Projects from '@/components/Projects.vue';
+import Customers from '@/components/Customers.vue';
+import Agents from '@/components/Agents.vue';
+import Footer from '@/components/Footer.vue';
 export default {
   components: {
     Header,
     Stats,
     Features,
-    Services
+    Services,
+    Projects,
+    Customers,
+    Agents,
+    Footer
   },
 };
 </script>
