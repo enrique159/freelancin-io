@@ -6,7 +6,7 @@
         <div class="col col-3">
           <img class="logo" src="@/assets/logo.svg" alt="" />
         </div>
-        <div class="col col-6">
+        <div class="col col-6 nav-menu">
           <div class="d-flex w-100 justify-content-center">
             <a href="#" class="nav-menu-item">
               Services <i class="bi bi-caret-down-fill"></i>
@@ -15,7 +15,7 @@
             <a href="#" class="nav-menu-item"> Blog </a>
           </div>
         </div>
-        <div class="col col-3">
+        <div class="col col-3 nav-buttons">
           <div class="d-flex w-100 justify-content-end">
             <button class="btn button-transparent me-3">
               EN <i class="bi bi-caret-down-fill"></i>
@@ -29,7 +29,7 @@
     <!-- -------- CONTENT -------- -->
     <div class="container header-content">
       <div class="row w-100">
-        <div class="col col-6">
+        <div class="col col-12 col-lg-6">
           <h1 class="header-content-title">Find & Hire Expert Freelancers</h1>
           <p class="header-content-subtext">
             Work with the best freelance talent from around the world on our 
@@ -95,6 +95,29 @@ export default {
     font-size: var(--h3-font-size);
     font-weight: var(--font-regular);
     color: var(--color-gray-4);
+  }
+}
+@media only screen and (max-width: 768px) {
+  #header-comp {
+    background-position: 65% 50%;
+  }
+  .logo {
+    min-width: 128px;
+  }
+  .header-content {
+    padding: 0 24px;
+    .header-content-title {
+      font-size: 2.5rem;
+    }
+    .header-content-subtext {
+      width: 100%;
+    }
+  }
+  .header-hero-img {
+    display: none;
+  }
+  .nav-menu, .nav-buttons {
+    visibility: hidden;
   }
 }
 </style>

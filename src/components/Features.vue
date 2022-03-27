@@ -11,28 +11,28 @@
         </div>
       </div>
       <div class="row text-center features-blocs">
-        <div class="col col-3">
+        <div class="col col-12 col-md-3">
           <img src="@/assets/img/features_icon_1.svg" alt="">
           <h4>Choosing a Service</h4>
           <p>
             Choosing an accountant that matches your needs
           </p>
         </div>
-        <div class="col col-3">
+        <div class="col col-12 col-md-3">
           <img src="@/assets/img/features_icon_2.svg" alt="">
           <h4>Our Clients Say</h4>
           <p>
             Read the reviews from some of our satisfied clients
           </p>
         </div>
-        <div class="col col-3">
+        <div class="col col-12 col-md-3">
           <img src="@/assets/img/features_icon_3.svg" alt="">
           <h4>Initial Consultation</h4>
           <p>
             Understanding your accountancy requirements
           </p>
         </div>
-        <div class="col col-3">
+        <div class="col col-12 col-md-3">
           <img src="@/assets/img/features_icon_4.svg" alt="">
           <h4>Request a Callback</h4>
           <p>
@@ -90,6 +90,18 @@ export default {
     text-decoration: underline;
     color: var(--color-primary);
     font-size: var(--h3-font-size);
+  }
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+    .features-subtitle { width: 100%; }
+    .features-blocs {
+      h4 {
+        margin: 1rem 0 0.5rem;
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
 </style>

@@ -2,21 +2,21 @@
   <div id="stats-comp">
     <div class="container py-5">
       <div class="row py-5">
-        <div class="col col-4 text-center px-5">
+        <div class="col col-12 col-md-4 text-center px-5 mb-md-0 mb-5">
           <img class="stats-img" src="@/assets/img/stats_icon_1.svg" alt="" />
           <h3 class="stats-title">Grow your audience</h3>
           <p class="stats-content">
             Find new customers and build your email list with lead generation ..
           </p>
         </div>
-        <div class="col col-4 text-center px-5">
+        <div class="col col-12 col-md-4 text-center px-5 mb-md-0 mb-5">
           <img class="stats-img" src="@/assets/img/stats_icon_2.svg" alt="" />
           <h3 class="stats-title">Boost online sales</h3>
           <p class="stats-content">
             Market your ecommerce business and deliver experiences ..
           </p>
         </div>
-        <div class="col col-4 text-center px-5">
+        <div class="col col-12 col-md-4 text-center px-5">
           <img class="stats-img" src="@/assets/img/stats_icon_3.svg" alt="" />
           <h3 class="stats-title">Sell your knowledge</h3>
           <p class="stats-content">
@@ -117,6 +117,31 @@ export default {
       font-weight: var(--font-regular);
       color: var(--color-white);
       margin: 0 0 3rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #stats-comp {
+    height: fit-content;
+    .stats-container-blue {
+      height: fit-content;
+      padding: 2rem 0 1rem;
+      h2 {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 2rem;
+      }
+      div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
